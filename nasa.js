@@ -7,4 +7,7 @@ function contentLoaded(){
 
     //apod image 
     fetch(`${apodUrl}?api_key=${apiKey}`)
+    .then(res => res.json())
+    .then (data => handleApodData (data, apodElement))
+    .catch(handleError);
 }
