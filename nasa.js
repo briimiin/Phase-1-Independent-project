@@ -22,8 +22,9 @@ function contentLoaded(){
          .then(res => res.json())
          .then(data => handleApodData(data, apodElement))
          .catch(handleError);
+    
+   })
+   dateInput.addEventListener("focus", function(){
 
-
-
- })
+   });
 }
