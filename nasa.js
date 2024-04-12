@@ -10,4 +10,12 @@ function contentLoaded(){
     .then(res => res.json())
     .then (data => handleApodData (data, apodElement))
     .catch(handleError);
+
+ document.getElementById('submit-button').addEventListener('click', function(){
+    document.getElementById('submit-button').style.backgroundColor = '#d69ee7';
+    setTimeout(function(){
+        document.getElementById('submit-button').style.backgroundColor='';
+    },4000)
+
+ })
 }
