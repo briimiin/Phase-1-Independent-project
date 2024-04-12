@@ -28,3 +28,10 @@ function contentLoaded(){
 
    });
 }
+function handleApodData(data, apodElement){
+    apodElement.src = data.hdurl;
+    document.querySelector('.apod-title').textContent = data.title;
+    document.querySelector('.apod-description').textContent = data.explanation;
+    document.querySelector('.apod-date').textContent = `Date: ${(new Date(data.date)).toDateString}`;
+    
+}
