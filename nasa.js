@@ -33,5 +33,9 @@ function handleApodData(data, apodElement){
     document.querySelector('.apod-title').textContent = data.title;
     document.querySelector('.apod-description').textContent = data.explanation;
     document.querySelector('.apod-date').textContent = `Date: ${(new Date(data.date)).toDateString}`;
-    
+
 }
+function handleError(error){
+    console.error(error);
+}
+window.addEventListener("DOMContentLoaded", contentLoaded);
