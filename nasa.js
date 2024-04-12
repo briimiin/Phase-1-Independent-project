@@ -4,4 +4,7 @@ const apodUrl = "https://api.nasa.gov/planetary/apod";
 
 function contentLoaded(){
     const apodElement = document.querySelector(".apod-image img");
+
+    //apod image 
+    fetch(`${apodUrl}?api_key=${apiKey}`)
 }
