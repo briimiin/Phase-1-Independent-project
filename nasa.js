@@ -18,7 +18,12 @@ function contentLoaded(){
     },4000)
     const dateInput = document.getElementById('date-input');
     const selectedDate = dateInput.value;
-    
+    fetch(`${apodUrl}?date = ${selectedDate}&api_key=${apiKey}`)
+         .then(res => res.json())
+         .then(data => handleApodData(data, apodElement))
+         .catch(handleError);
+
+
 
  })
 }
