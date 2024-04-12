@@ -16,6 +16,9 @@ function contentLoaded(){
     setTimeout(function(){
         document.getElementById('submit-button').style.backgroundColor='';
     },4000)
+    const dateInput = document.getElementById('date-input');
+    const selectedDate = dateInput.value;
+    
 
  })
 }
