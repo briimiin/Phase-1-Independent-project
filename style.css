@@ -16,7 +16,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
   }
   body {
-    background-image: url(space.jpeg);
+    background-image: url(back.jpg);
     background-clip: content-box;
     background-size: cover;
     font-family: Arial, sans-serif;
