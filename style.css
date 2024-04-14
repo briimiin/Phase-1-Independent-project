@@ -44,3 +44,17 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, ol {
     background-color: #d69ee7;
     box-shadow: 0 0 5px rgba(119, 200,169,0.5);
   }
+  #submit-button{
+    padding: 12px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    border-radius: 70px;
+    border: 0px;
+    background-color: #7e71f3;
+    transition:color 0.3s,text-shadow 0.3s;
+    margin-left: 30px;   
+    font-size: 15px;
+
+  }
+  #submit-button:hover{
+    background-color: #d69ee7;
+  }
